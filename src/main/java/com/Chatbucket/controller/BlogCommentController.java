@@ -30,4 +30,3 @@ public List<BlogComment> viewComments(@PathVariable("blogid") String blogid)
 }
 
 }
-
