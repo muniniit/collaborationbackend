@@ -7,32 +7,33 @@ import javax.persistence.Id;
 public class BlogComment {
 @Id@GeneratedValue
 	private int commentid;
-	private String blogid;
-	private String name;
-	private String comment;
+	private int blogid;
+	private String title;
+	private String blog_comment;
 	public int getCommentid() {
 		return commentid;
 	}
 	public void setCommentid(int commentid) {
 		this.commentid = commentid;
 	}
-	public String getBlogid() {
+	public int getBlogid() {
 		return blogid;
 	}
-	public void setBlogid(String blogid) {
+	public void setBlogid(int blogid) {
 		this.blogid = blogid;
 	}
-	public String getName() {
-		return name;
+	public String getTitle() {
+		return title;
 	}
-	public void setName(String name) {
-		this.name = name;
+	public void setTitle(String title) {
+		this.title = title;
 	}
-	public String getComment() {
-		return comment;
+	public String getBlog_comment() {
+		return blog_comment;
 	}
-	public void setComment(String comment) {
-		this.comment = comment;
+	public void setBlog_comment(String blog_comment) {
+		this.blog_comment = blog_comment;
 	}
+	
 	
 }

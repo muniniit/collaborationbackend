@@ -83,4 +83,20 @@ public class ApplicationConfiguration {
 	    return resolver;
 	}
 
-}
+	@Autowired
+	@Bean(name="BlogComment")
+	public BlogComment getComment()
+	{
+		return new BlogComment();
+	}
+		
+	@Autowired
+		@Bean(name="Blog")
+		public Blog getBlog()
+		{
+			return new Blog();
+		}
+		
+		
+	}
+
